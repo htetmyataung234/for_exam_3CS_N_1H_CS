@@ -50,6 +50,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\red.png" />
+    <Content Include="No_1%28H1%29.aspx" />
+    <Content Include="No_1.aspx" />
+    <Content Include="Read_Me.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -59,7 +63,27 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="No_1%28H1%29.aspx.cs">
+      <DependentUpon>No_1%28H1%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No_1%28H1%29.aspx.designer.cs">
+      <DependentUpon>No_1%28H1%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="No_1.aspx.cs">
+      <DependentUpon>No_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No_1.aspx.designer.cs">
+      <DependentUpon>No_1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -1,0 +1,1 @@
+﻿So just make sure to add App_Data so we can connect sql server with ease.
