@@ -21,6 +21,7 @@ namespace For_Exam
                 ListBox1.Items.Remove(ListBox1.SelectedItem);
       
             }
+            lblMessage.Visible = false;
         }
 
         protected void btnSendL_Click(object sender, EventArgs e)
@@ -29,7 +30,7 @@ namespace For_Exam
             {
                 ListBox1.Items.Add(ListBox2.SelectedItem.Text);
                 ListBox2.Items.Remove(ListBox2.SelectedItem);
-
+                lblMessage.Visible = false;
             }
         }
 
@@ -39,8 +40,8 @@ namespace For_Exam
             {
                 ListBox2.Items.Add(item);
                 ListBox1.Items.Remove(item);
-
             }
+            lblMessage.Visible = false;
         }
 
         protected void btnSendAllL_Click(object sender, EventArgs e)
@@ -49,8 +50,9 @@ namespace For_Exam
             {
                 ListBox1.Items.Add(item);
                 ListBox2.Items.Remove(item);
-
+                
             }
+            lblMessage.Visible = false;
         }
 
         protected void ListBox2_SelectedIndexChanged(object sender, EventArgs e)

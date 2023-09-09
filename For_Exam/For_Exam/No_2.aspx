@@ -35,7 +35,8 @@
             </td>
             <td>
                 <asp:ListBox ID="ListBox2" runat="server" Height="200px" 
-                    onselectedindexchanged="ListBox2_SelectedIndexChanged" Width="88px"></asp:ListBox>
+                    onselectedindexchanged="ListBox2_SelectedIndexChanged" Width="88px" 
+                    AutoPostBack="True"></asp:ListBox>
             </td>
         </tr>
     </table>

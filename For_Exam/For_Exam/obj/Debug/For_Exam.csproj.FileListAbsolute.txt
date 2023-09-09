@@ -2,3 +2,4 @@ C:\Users\Tempestarii\Desktop\3CS48\For_Exam\For_Exam\bin\For_Exam.dll
 C:\Users\Tempestarii\Desktop\3CS48\For_Exam\For_Exam\bin\For_Exam.pdb
 C:\Users\Tempestarii\Desktop\3CS48\For_Exam\For_Exam\obj\Debug\For_Exam.dll
 C:\Users\Tempestarii\Desktop\3CS48\For_Exam\For_Exam\obj\Debug\For_Exam.pdb
+C:\Users\Tempestarii\Desktop\3CS48\For_Exam\For_Exam\obj\Debug\For_Exam.csprojResolveAssemblyReference.cache
