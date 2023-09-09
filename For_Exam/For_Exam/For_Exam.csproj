@@ -51,8 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\red.png" />
+    <Content Include="No3.aspx" />
     <Content Include="No_1%28H1%29.aspx" />
     <Content Include="No_1.aspx" />
+    <Content Include="No_2.aspx" />
     <Content Include="Read_Me.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -63,6 +65,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="No3.aspx.cs">
+      <DependentUpon>No3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No3.aspx.designer.cs">
+      <DependentUpon>No3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="No_1%28H1%29.aspx.cs">
       <DependentUpon>No_1%28H1%29.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -76,6 +85,13 @@
     </Compile>
     <Compile Include="No_1.aspx.designer.cs">
       <DependentUpon>No_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="No_2.aspx.cs">
+      <DependentUpon>No_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="No_2.aspx.designer.cs">
+      <DependentUpon>No_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -24,7 +24,7 @@ namespace For_Exam
             else
             {
                 Image1.ImageUrl = "~//images//blue.png";
-         
+
             }
 
         }
