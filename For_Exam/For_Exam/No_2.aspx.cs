@@ -58,6 +58,7 @@ namespace For_Exam
         protected void ListBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             lblMessage.Text = ListBox2.SelectedItem.Text;
+            lblMessage.Visible = true;
         }
     }
 }

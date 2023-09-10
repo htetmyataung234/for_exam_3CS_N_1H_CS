@@ -34,7 +34,7 @@ namespace For_Exam
         protected void btnSort_Click(object sender, EventArgs e)
         {
             ArrayList Items = new ArrayList();
-            foreach (ListItem item in DropDownList1.Items)
+            foreach (ListItem item in ListBox1.Items)
             {
                 Items.Add(item.Text);
             }

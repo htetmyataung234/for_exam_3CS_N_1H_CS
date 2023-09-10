@@ -21,17 +21,12 @@ namespace For_Exam
 
         protected void txtQuantity_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                int Total = int.Parse(DropDownList1.SelectedItem.Value);
+
+                int price = int.Parse(DropDownList1.SelectedItem.Value);
                 int Qty = int.Parse(txtQuantity.Text);
-                int TotalPrice = Total * Qty;
+                int TotalPrice = price * Qty;
                 txtTotal.Text = TotalPrice.ToString();
-            }
-            catch
-            {
-                lblPrice.Text = "Please only enter valid natural number";
-            }
+      
         }
     }
 }
