@@ -22,11 +22,11 @@ namespace Building_ASP.NET_Pages.For_Exam
             {
                 output = output + "Gender   : " + m.Text;
             }
-            else if (fm.Checked)5
+            else if (fm.Checked)
             {
                 output = output + "Gender   : " + fm.Text + "\n";
             }
-            File.WriteAllText(Server.MapPath("~\\For Exam\\output.txt"), write);
+            File.WriteAllText(Server.MapPath("~\\For Exam\\output.txt"), output);
             msg.Text = "Saved information with output.txt file.";
         }
     }

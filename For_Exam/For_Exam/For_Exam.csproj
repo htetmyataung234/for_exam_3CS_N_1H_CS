@@ -157,6 +157,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="No_4_txtfile.aspx.cs">
       <DependentUpon>No_4_txtfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="No_4_txtfile.aspx.designer.cs">
       <DependentUpon>No_4_txtfile.aspx</DependentUpon>
