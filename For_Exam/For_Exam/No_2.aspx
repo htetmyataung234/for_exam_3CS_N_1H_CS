@@ -14,7 +14,7 @@
     <table>
         <tr>
             <td>
-                <asp:ListBox ID="ListBox1" runat="server" Height="200px">
+                <asp:ListBox ID="ListBox1" runat="server" Height="200px" Width="75px">
                     <asp:ListItem>Item1</asp:ListItem>
                     <asp:ListItem>Item2</asp:ListItem>
                     <asp:ListItem>Item3</asp:ListItem>
@@ -35,7 +35,7 @@
             </td>
             <td>
                 <asp:ListBox ID="ListBox2" runat="server" Height="200px" 
-                    onselectedindexchanged="ListBox2_SelectedIndexChanged" Width="88px" 
+                    onselectedindexchanged="ListBox2_SelectedIndexChanged" Width="75px" 
                     AutoPostBack="True"></asp:ListBox>
             </td>
         </tr>

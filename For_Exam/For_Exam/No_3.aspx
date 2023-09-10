@@ -17,13 +17,12 @@
             <asp:ListItem>Basketball</asp:ListItem>
             <asp:ListItem>Swimming</asp:ListItem>
             <asp:ListItem>Gaming</asp:ListItem>
-            <asp:ListItem></asp:ListItem>
         </asp:DropDownList>
         <asp:Button ID="btnAdd" runat="server" Text="&gt;&gt;" onclick="btnAdd_Click" />
     
     </div>
     <br />
-    <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+    <asp:ListBox ID="ListBox1" runat="server" Height="100px" Width="75px"></asp:ListBox>
     <br />
     <asp:Button ID="btnFill" runat="server" Text="Fill" onclick="btnFill_Click" />
     <asp:Button ID="btnSort" runat="server" Text="Sort" onclick="btnSort_Click" />
