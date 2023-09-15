@@ -35,11 +35,21 @@ namespace For_Exam
 
         protected void btnFill_Click(object sender, EventArgs e)
         {
-            foreach (ListItem item in DropDownList1.Items)
-            {
-                ListBox1.Items.Add(item);
-            }
-            lblMessage.Text = "";
+            
+                foreach (ListItem item in DropDownList1.Items)
+                {
+                    
+                    if (ListBox1.Items.Contains(item))
+                    {
+
+                    }
+                    else
+                    {
+                        ListBox1.Items.Add(item);
+                    }
+                }
+                lblMessage.Text = "";
+
         }
 
         protected void btnSort_Click(object sender, EventArgs e)
