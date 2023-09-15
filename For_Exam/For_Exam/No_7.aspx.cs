@@ -13,7 +13,7 @@ namespace For_Exam
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace For_Exam
 
                 if (count > 0)
                 {
-          
+
                     string updateQuery = "UPDATE EmployeeTable SET Name = @Name, Password = @Password, Address = @Address WHERE Employee_ID = @Employee_ID";
                     using (SqlCommand updateCmd = new SqlCommand(updateQuery, con))
                     {
@@ -48,7 +48,7 @@ namespace For_Exam
                 }
                 else
                 {
-              
+
                     string insertQuery = "INSERT INTO EmployeeTable (Employee_ID, Name, Password, Address) VALUES (@Employee_ID, @Name, @Password, @Address)";
                     using (SqlCommand insertCmd = new SqlCommand(insertQuery, con))
                     {
@@ -84,16 +84,18 @@ namespace For_Exam
                 lblMsg.Text = "No data in database";
             }
             GridView1.DataBind();
+            GridView1.AutoGenerateSelectButton = true;
+
         }
 
-        
+
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             string connection = "Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\data.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
-          
+
 
             // Check if the same data already exists
             string deleteQuery = "Delete EmployeeTable WHERE Employee_ID = @Employee_ID";
@@ -106,5 +108,24 @@ namespace For_Exam
 
             GridView1.DataBind();
         }
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+            if (GridView1.SelectedIndex > -1)
+            {
+
+                GridViewRow selectedRow = GridView1.SelectedRow;
+                txtEmployeeID.Text = selectedRow.Cells[1].Text;
+                txtName.Text = selectedRow.Cells[2].Text;
+                txtPassword.Text = selectedRow.Cells[3].Text;
+                txtAddress.Text = selectedRow.Cells[4].Text;
+
+            }
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           GridView1.SelectedIndex = GridView1.SelectedRow.RowIndex;
+        }
+    }
 }

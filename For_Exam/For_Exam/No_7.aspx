@@ -62,9 +62,10 @@
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
         CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" 
-        GridLines="None">
+        GridLines="None" onselectedindexchanged="GridView1_SelectedIndexChanged">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
+            <asp:CommandField SelectText="Edit" ShowSelectButton="True" />
             <asp:BoundField DataField="Employee_ID" HeaderText="Employee_ID" 
                 SortExpression="Employee_ID" />
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
@@ -72,8 +73,7 @@
                 SortExpression="Password" />
             <asp:BoundField DataField="Address" HeaderText="Address" 
                 SortExpression="Address" />
-            <asp:BoundField DataField="Entry_ID" HeaderText="Entry_ID" 
-                InsertVisible="False" ReadOnly="True" SortExpression="Entry_ID" />
+            <asp:TemplateField></asp:TemplateField>
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

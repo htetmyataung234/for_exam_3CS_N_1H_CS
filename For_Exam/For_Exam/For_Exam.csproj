@@ -55,7 +55,10 @@
       <DependentUpon>data.mdf</DependentUpon>
     </Content>
     <Content Include="DataGridView.aspx" />
+    <Content Include="images\Chip.jpg" />
     <Content Include="images\red.png" />
+    <Content Include="images\Cola.jpg" />
+    <Content Include="images\Pepsi.jpg" />
     <Content Include="No_6%28H1%29.aspx" />
     <Content Include="No_6.aspx" />
     <Content Include="No_3.aspx" />

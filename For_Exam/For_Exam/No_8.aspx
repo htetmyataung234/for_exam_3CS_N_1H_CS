@@ -40,6 +40,9 @@
     </table>
     
  
+    <asp:Image ID="Image1" runat="server" Height="200px" Width="200px" />
+    
+ 
     </form>
 </body>
 </html>

@@ -16,11 +16,21 @@ namespace For_Exam
             {
                 ArrayList item = new ArrayList();
             }
+            lblMessage.Text = "";
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-            ListBox1.Items.Add(DropDownList1.SelectedItem.Text);
+            if (ListBox1.Items.Contains(DropDownList1.SelectedItem))
+            { 
+                lblMessage.Text = "Item already exist";
+            }
+            else
+            {
+                ListBox1.Items.Add(DropDownList1.SelectedItem.Text);
+                lblMessage.Text = "";
+            }
+            
         }
 
         protected void btnFill_Click(object sender, EventArgs e)
@@ -29,6 +39,7 @@ namespace For_Exam
             {
                 ListBox1.Items.Add(item);
             }
+            lblMessage.Text = "";
         }
 
         protected void btnSort_Click(object sender, EventArgs e)
@@ -44,11 +55,13 @@ namespace For_Exam
             {
                 ListBox1.Items.Add(item);
             }
+            lblMessage.Text = "";
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
         {
             ListBox1.Items.Clear();
+            lblMessage.Text = "";
         }
 
         protected void btnExit_Click(object sender, EventArgs e)
