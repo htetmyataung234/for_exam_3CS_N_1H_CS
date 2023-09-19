@@ -14,7 +14,8 @@
                     <asp:Label ID="Label1" runat="server" Text="Employee_ID :"></asp:Label>
                 </td>
                 <td colspan="2">
-                    <asp:TextBox ID="txtEmployeeID" runat="server" Width="200px" ></asp:TextBox>
+                    <asp:TextBox ID="txtEmployeeID" runat="server" Width="200px" 
+                        AutoCompleteType="Disabled" Required ></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -22,7 +23,8 @@
                     <asp:Label ID="Label2" runat="server" Text="Name : "></asp:Label>
                 </td>
                 <td colspan="2">
-                    <asp:TextBox ID="txtName" runat="server" Width="200px" ></asp:TextBox>
+                    <asp:TextBox ID="txtName" runat="server" Width="200px" 
+                        AutoCompleteType="Disabled" Required ></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -30,7 +32,8 @@
                     <asp:Label ID="Label3" runat="server" Text="Password :"></asp:Label>
                 </td>
                 <td colspan="2">
-                    <asp:TextBox ID="txtPassword" runat="server" Width="200px" TextMode="Password" ></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" runat="server" Width="200px" TextMode="Password" 
+                        AutoCompleteType="Disabled" Required ></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -38,7 +41,8 @@
                     <asp:Label ID="Label4" runat="server" Text="Address :"></asp:Label>
                 </td>
                 <td colspan="2">
-                    <asp:TextBox ID="txtAddress" runat="server" Width="200px" TextMode="MultiLine"></asp:TextBox>
+                    <asp:TextBox ID="txtAddress" runat="server" Width="200px" TextMode="MultiLine" 
+                        AutoCompleteType="Disabled" Required ></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -62,7 +66,8 @@
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
         CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" 
-        GridLines="None" onselectedindexchanged="GridView1_SelectedIndexChanged">
+        GridLines="None" onselectedindexchanged="GridView1_SelectedIndexChanged" 
+        onrowcommand="GridView1_RowCommand">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:CommandField SelectText="Edit" ShowSelectButton="True" />

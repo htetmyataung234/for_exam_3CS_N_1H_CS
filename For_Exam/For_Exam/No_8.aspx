@@ -9,12 +9,12 @@
     <form id="form1" runat="server">
     <div>
         <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" 
-            DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="Price" 
+             DataTextField="Name" DataValueField="Price" 
             onselectedindexchanged="DropDownList1_SelectedIndexChanged">
+            <asp:ListItem Selected="True" Value="1500">Cola</asp:ListItem>
+            <asp:ListItem Value="1000">Pepsi</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:sale %>"
-        SelectCommand="SELECT * FROM [Price]"></asp:SqlDataSource>
     <asp:Label ID="lblPrice" runat="server" 
         Text="Select something and enter Quantity in int^^"></asp:Label>
     &nbsp;

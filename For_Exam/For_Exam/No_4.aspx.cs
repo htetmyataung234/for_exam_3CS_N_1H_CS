@@ -20,7 +20,7 @@ namespace For_Exam
         {   
             
             string connection = "Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\data.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            SqlConnection con = new SqlConnection(@connection);
+            SqlConnection con = new SqlConnection(connection);
             con.Open();
             string Query = "INSERT INTO Data(Name,Password,Gender,Address) VALUES (@Name,@Password,@Gender,@Address)";
             using (SqlCommand com = new SqlCommand(Query,con))
